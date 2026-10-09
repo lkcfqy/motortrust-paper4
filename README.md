@@ -66,3 +66,26 @@ The results concern two physical machines. Repeated profiles are duty cycles, an
 The source Electric Motor Temperature dataset is credited to Kirgsn (`wkirgsn`) and retains CC BY-SA 4.0. The external LPTN-informed LSTM repository retains MIT and Copyright (c) 2024 Zirui Liu. Original applicable license texts are included in `recovery/licenses/` and upstream metadata in `data/raw/`. See [`recovery/licenses/PAPER4_DATA_SOURCES_AND_LICENSES.md`](recovery/licenses/PAPER4_DATA_SOURCES_AND_LICENSES.md).
 
 The source snapshot makes no separate license declaration for independently authored MotorTrust code or manuscripts. This split does not introduce one or relicense those works.
+
+
+## Download and restore this paper's raw-data Release
+
+Download `raw-data-manifest.json` and all numbered parts from [raw-data-2026-10-09](https://github.com/lkcfqy/motortrust-paper4/releases/tag/raw-data-2026-10-09) into one folder. The committed expected manifest is [`recovery/raw-data-manifest.json`](recovery/raw-data-manifest.json). From this repository root, run:
+
+```sh
+python scripts/restore_raw_data.py --parts-dir /path/to/downloaded/assets
+```
+
+The standard-library script verifies the downloaded manifest against this repository's expected bytes, every split part, the joined archive, and every raw file before installing data under `data/raw/`. Identical existing files are skipped; different existing files are protected. The raw archive was independently verified in full; the record is [`recovery/raw_archive_verification.json`](recovery/raw_archive_verification.json). `git clone` contains code, papers, processed inputs and saved results; it does not download the raw-data assets.
+
+The external dataset's nested `.git` is excluded from the data archive. After restoration, reconstruct the upstream metadata without replacing the restored files:
+
+```sh
+git init data/raw/lptn_informed_lstm
+git -C data/raw/lptn_informed_lstm remote add origin https://github.com/Zirui24/lptn_informed_LSTM.git
+git -C data/raw/lptn_informed_lstm fetch --depth 1 origin 98e4566b5fb7c70499996fda18dd73179ec16509
+git -C data/raw/lptn_informed_lstm reset --mixed FETCH_HEAD
+git -C data/raw/lptn_informed_lstm rev-parse HEAD
+```
+
+Use these commands only for the restored data directory that has no `.git` yet. The expected final revision is `98e4566b5fb7c70499996fda18dd73179ec16509`; `reset --mixed` preserves the restored measurement files.

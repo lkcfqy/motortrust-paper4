@@ -1,0 +1,689 @@
+{
+  "paper": 4,
+  "status": "pass",
+  "started_utc": "2026-10-09T09:56:05.602123+00:00",
+  "completed_utc": "2026-10-09T09:56:06.341536+00:00",
+  "elapsed_seconds": 0.739,
+  "manifest_sha256": "2636592b8adb9688d55a24262141c490b5b4ce0a195e2c928d8618ef29fe8137",
+  "part_count": 1,
+  "file_count": 110,
+  "compressed_size_bytes": 157526197,
+  "concatenated_archive_sha256": "a274815385cbb111ec606adc71e7066e88880be715614ca649ab1a442d8192f5",
+  "unpacked_file_size_bytes": 344989707,
+  "parts": [
+    {
+      "filename": "motortrust-paper4-raw-data-2026-10-09.tar.gz.part001",
+      "size_bytes": 157526197,
+      "sha256": "a274815385cbb111ec606adc71e7066e88880be715614ca649ab1a442d8192f5",
+      "status": "pass"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/raw/electric_motor_temperature/measures_v2.csv",
+      "size_bytes": 300061411,
+      "sha256": "78f3d150f0f2ad9c5dc7ff24dd12c00d386ad530f48c1589ad24fcd88867d3ad",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/electric_motor_temperature/provenance.json",
+      "size_bytes": 533,
+      "sha256": "47cc6727c6106b6348da553ca6e130df6cd9778b3c60d49e88c57571baa3e2c2",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/LICENSE",
+      "size_bytes": 1087,
+      "sha256": "5bd3c7e2e0bc75016063d56845c7ef83d972bf4ead6799aa54d57502dd645783",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/README.md",
+      "size_bytes": 4267,
+      "sha256": "8dc774c32e7cc9537cb494f854a9f1f649fd5eee805eda2ba3a38d3e664c6abb",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_0.csv",
+      "size_bytes": 1448958,
+      "sha256": "50d2cb9fc0342aa009c5f9fa101c0c109305ead7684882349cec5cdceccb49dc",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_1.csv",
+      "size_bytes": 206986,
+      "sha256": "c978ee2a613b9713e8d506f5bda037e42fc96d3f0f2e008e826a10baffe9d519",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_10.csv",
+      "size_bytes": 230754,
+      "sha256": "4cae686c7591566160e356d4a48ad119cf95e7f31d40cd1203cd60b1d71b7e8f",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_11.csv",
+      "size_bytes": 843419,
+      "sha256": "de437110cc6f61ac2911783daf7e3ac49696aec5d3c4155c8921d9b11e7e27c4",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_12.csv",
+      "size_bytes": 688639,
+      "sha256": "b43d4b92c1251f9bea1b193aa1135191815ecba27bb29082ad3fabd5cac3222f",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_13.csv",
+      "size_bytes": 853350,
+      "sha256": "4887c776bd5349f9070a4e8d22118c34c570a1c54ff1728690eab9ec8ec10e7f",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_14.csv",
+      "size_bytes": 1945213,
+      "sha256": "87cb50ef36e99ee9c290382cdc8d98d7839f8eb440c0990dbbecea2b13fe79e3",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_15.csv",
+      "size_bytes": 692101,
+      "sha256": "ead580d7533dd2260f9cbd2479c4e3964045edb87b41729f88556e8068c991ce",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_2.csv",
+      "size_bytes": 1638013,
+      "sha256": "5a76aa86633b0ab2adf06f86de31465284296dcdbab1e6cff922e9fece46277e",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_3.csv",
+      "size_bytes": 1052502,
+      "sha256": "581e38129d6f3bf3b11f211c6db37b4ec760e639898c50d3c131a2d657db02f3",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_4.csv",
+      "size_bytes": 1336095,
+      "sha256": "931c335f1ab0c2a5a37ac88bdb52d6feef03dedf0424ff237c13f83272586c82",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_5.csv",
+      "size_bytes": 1458862,
+      "sha256": "3de71b5bff182390f561c113361a4401bb289a8d58a2fcab2744707bd3c02d0f",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_6.csv",
+      "size_bytes": 893773,
+      "sha256": "7133af6926addcaa0b82a29940e8676d5d7ad73c1902d563b753594af1acf9e4",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_7.csv",
+      "size_bytes": 1083531,
+      "sha256": "222185a6ede770c077c1308eba3853c5a42adea8af64014b41070a840ad679d3",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_8.csv",
+      "size_bytes": 625153,
+      "sha256": "86d8fbf2b1325d6a6aed77e84ee908feafd1600c9f6a545223dc4377b8fb8c09",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/id_9.csv",
+      "size_bytes": 494708,
+      "sha256": "4c72e7ec539a37920dd7df26b5cae9033f95ed7035b307b369ce2d6913fca970",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/dataset/temperature.csv",
+      "size_bytes": 23818258,
+      "sha256": "9ee0f4c2bd17614b801199514b527c7167e4b51bbdf44315b0385c5336a3abb6",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/ParamSet.mlx",
+      "size_bytes": 45884,
+      "sha256": "e21e8d7cd98ea52da4f22fd481bd4f026bd5146e87b3cbcbbb2ac4466ed5c46f",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/Simulation.slx",
+      "size_bytes": 38708,
+      "sha256": "796f88dfa5aff9b819143eaad975b22e8771517afa93237655e41611213ae8dd",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/Simulation.slxc",
+      "size_bytes": 162907,
+      "sha256": "9a3391d515e06b200295746f56a190cdef9f43541a0b8d1a6b861932139ab3e2",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/SimulationParamUncertainty.slxc",
+      "size_bytes": 324113,
+      "sha256": "1c15750f0cffe4e4497d008b87c2b0c7aebc14202c06693cead639657531dce1",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/jitEngineAccessInfo.mat",
+      "size_bytes": 1168,
+      "sha256": "356e94c6af319639fc5e82bcf557188cd14c9e0ef0bc11bfc5b7090aba0d7149",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/s1l2pbdEhu27AgudHMnrhfC.l",
+      "size_bytes": 20632,
+      "sha256": "17dddaba054e8f61292c33acaa6a0e0aa2debbe7fbd4eec49b4d8a36f9941325",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/s1l2pbdEhu27AgudHMnrhfC.mat",
+      "size_bytes": 1024,
+      "sha256": "0b19dcad4ee09ca53eaea731ca0d25d11856df14fd4f9be32a6142e6efca47c2",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sBrb2Kv5eQFWHmokivxK4JF.l",
+      "size_bytes": 45672,
+      "sha256": "51c3a5ccb74b86f80c0a039f4f0898e1e4c959846a7afd68d981a6887c6802a8",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sBrb2Kv5eQFWHmokivxK4JF.mat",
+      "size_bytes": 1230,
+      "sha256": "c6b3130718809446d2d09252419f1d740ec1b7f29d0937449f9692a720d00101",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sCPc1edp9nUkoeZRG1RWNKB.l",
+      "size_bytes": 26312,
+      "sha256": "ac4939a71f861301db94ce4a4862114f0572a0f1af8f92ea2e349946f67372cb",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sCPc1edp9nUkoeZRG1RWNKB.mat",
+      "size_bytes": 1004,
+      "sha256": "ef9f984b6a972cfda0ee7ae2fb83b1fd985781315eb86d60960506ad19462d0a",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sD9pwkF90mLWfDiw1jwAeQG.l",
+      "size_bytes": 45588,
+      "sha256": "88bfa017998ba25093f9d38c46054cf37e3c7eef4c798ca7e4e9830ddd9fe9f9",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sD9pwkF90mLWfDiw1jwAeQG.mat",
+      "size_bytes": 1231,
+      "sha256": "3dcba6ebc6e386b107881d767e582f4b2b599fc453812bb16f49d6673cfd9b27",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sGirl8JAEoK9h53JwgbMJeH.l",
+      "size_bytes": 45492,
+      "sha256": "240293ff575f781fd20bc7122acfe44b243f6f2a3fe805a9edc3065061cea120",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sGirl8JAEoK9h53JwgbMJeH.mat",
+      "size_bytes": 1212,
+      "sha256": "1afe7937df02f66e5b8121c7d6136968733cc36dcca1e057ddacd4afdca41387",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sMVNUxVlgE0FZWTXDCapY0E.l",
+      "size_bytes": 45588,
+      "sha256": "3739836840e41716c386f65625f666c8c86c791a92219a52aa7942eb3b06aecc",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sMVNUxVlgE0FZWTXDCapY0E.mat",
+      "size_bytes": 1231,
+      "sha256": "d718f0d2a3de35de12341a97ebfebe7abf96d2d2962449d8c85333de5b9d13d8",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sR054sDzrRPISHbbjXS5yR.l",
+      "size_bytes": 45588,
+      "sha256": "5ef54a0ced583a390121d55cf3ea8f2e25d2ee3803c6e450e81fc524a8ca8d6b",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sR054sDzrRPISHbbjXS5yR.mat",
+      "size_bytes": 1232,
+      "sha256": "3f608c024b97d9b82edff415426f941436efc1dd2df35be991d91e149b592c3b",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/skCPugMYLDpVqdo9dBJxPQC.l",
+      "size_bytes": 48900,
+      "sha256": "7dde78a4d92778c85a1b57501daf64cebc6b3df43c3eb3b95c4319eb3238c2a1",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/skCPugMYLDpVqdo9dBJxPQC.mat",
+      "size_bytes": 1074,
+      "sha256": "fc9499621ea46467c4d43f5dfaf09adc9aaf255abf0f5c20cdffb810bfda237b",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sltDX7n4Y7orVSHxuN2RIVD.l",
+      "size_bytes": 62148,
+      "sha256": "4579d1354db9f59a30c60a7f84b741136e56863c22105db1b68269822844367e",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/sltDX7n4Y7orVSHxuN2RIVD.mat",
+      "size_bytes": 1085,
+      "sha256": "5bf114201f0a9ab2f8c8c7ce2ddd7dd45531f1df3dd2b8bb71e31fc7ba944b39",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/soJzPEPUZOkqVm0MNEWVLwF.l",
+      "size_bytes": 20632,
+      "sha256": "ad32cc95e48487fa75381d582d53b7807f7b0e758dac78a6d18ff121e2d67783",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/soJzPEPUZOkqVm0MNEWVLwF.mat",
+      "size_bytes": 1021,
+      "sha256": "2220bd728655e8ac9ee4b7bb6dadbe38682601d0752d54ee3df1c3a2b8e4f9dd",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/syI75gc1UhJNbpNybw3QlIH.l",
+      "size_bytes": 29816,
+      "sha256": "bdc2b51d2458c081e49ee25b58f7cc2addbffd1de8f04cf373a93bdfef73764d",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_jitprj/syI75gc1UhJNbpNybw3QlIH.mat",
+      "size_bytes": 1054,
+      "sha256": "0f90a42e5294e728f1a409948c0b0103477420a9deec6c620beaedc2ba089cf9",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/Pb22i5J2LMmdgZqBoSNnWB.mat",
+      "size_bytes": 67945,
+      "sha256": "84765bfefd32740047c509c23b3d2a06e62a96934b6ff96ca5c1a30562bea6f9",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/XQkiIVhnkJy9PV2UdE31u.mat",
+      "size_bytes": 76801,
+      "sha256": "a63e504639c2dc709ff383e42fcc6b64bb953f80f326ced2781ad2b697e732b1",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/emlReportAccessInfo.mat",
+      "size_bytes": 1168,
+      "sha256": "406e5fe3340502ed1010e7d122f1043326fa8326b6e64fd5240b8d9a029dbbfa",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/s1l2pbdEhu27AgudHMnrhfC.mat",
+      "size_bytes": 94493,
+      "sha256": "47db7651d1e1b4f045ceee57f6714815b3d5d9f5aedf9ebcc218da7e1aa32293",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/sBrb2Kv5eQFWHmokivxK4JF.mat",
+      "size_bytes": 107121,
+      "sha256": "7fe025cfee163a0452dc59a867bca748e0bed8bc894c8e8909cfe304b8694ee3",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/sCPc1edp9nUkoeZRG1RWNKB.mat",
+      "size_bytes": 86043,
+      "sha256": "ef8d6c02a7b24b6f5f2046642d2e775c78f7a2a2eff81c7687c1310d5cff09d6",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/sD9pwkF90mLWfDiw1jwAeQG.mat",
+      "size_bytes": 106777,
+      "sha256": "9b7d005795ece324aaf0d1765725d281b1100d087e874f7e2bf70a8fec932664",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/sGirl8JAEoK9h53JwgbMJeH.mat",
+      "size_bytes": 106760,
+      "sha256": "881395aad4a61d8ea64bac178d2b257c61786dab6bef869addea35528c4ab029",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/sMVNUxVlgE0FZWTXDCapY0E.mat",
+      "size_bytes": 106832,
+      "sha256": "38b36fc11f086842c3c9e5cc4bcb9db15447dfb68e2b4082a925fd24d7791f31",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/sR054sDzrRPISHbbjXS5yR.mat",
+      "size_bytes": 106817,
+      "sha256": "3df6e87376bc8e1a4eae8563870284587255a91c85c620ae7b977d7280640bd2",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/skCPugMYLDpVqdo9dBJxPQC.mat",
+      "size_bytes": 178332,
+      "sha256": "cc0d807064e2a7c8751ec73ce808460074fb6ff332e34ee02cb6657b2829ee02",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/sltDX7n4Y7orVSHxuN2RIVD.mat",
+      "size_bytes": 215652,
+      "sha256": "933b2668154139a1eba5d2c9bdd2b596e1ed9d98dd308a9ec19c73d4b12d09cf",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/soJzPEPUZOkqVm0MNEWVLwF.mat",
+      "size_bytes": 94500,
+      "sha256": "c2734ac3ab9ba17969d0b2a3dcd9805dd39007abfd05714ae83f94c72efc85cd",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/EMLReport/syI75gc1UhJNbpNybw3QlIH.mat",
+      "size_bytes": 121903,
+      "sha256": "1a24e3aa0f01d630b1a290c2047796f1c9894bf4debf3b930584ee07f5383939",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/Simulation/_self/sfun/info/binfo.mat",
+      "size_bytes": 886,
+      "sha256": "8d208418e438bcef390f4a6d73cd19374cb071b4d67458d945d5d24d5442a579",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/Simulation/amsi_serial.mat",
+      "size_bytes": 231,
+      "sha256": "82cf2050c82bb3ac72ba72e2ee1d1d772af8e5c9770f3501b3f6fdbc8cda4a40",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/SimulationParamUncertainty/_self/sfun/info/binfo.mat",
+      "size_bytes": 859,
+      "sha256": "18f62982ac1f36e8d3c4cb09ca1dabc37859d7c759c0eb64bb1ca19aaeb2eeb2",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/SimulationParamUncertainty/amsi_serial.mat",
+      "size_bytes": 247,
+      "sha256": "b3cca78cd6195f3f318692f55ca634a8578aa0aa165b79cd41b6ef93e6ac8add",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/89wv5VkDtJVwQpjGYvpiBB.mat",
+      "size_bytes": 1036,
+      "sha256": "41797bcdab7a9f9525c016f01908a42430fc6a73ff12974355aa20f1bab4bb7c",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/9qn4FmR3qTEjVoNjf7cUnD.mat",
+      "size_bytes": 1265,
+      "sha256": "94c64289f4744641f4423a483d745e9a038494ab0ae4147ffb5b7e0990dec39f",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/BlxXB8nCF6r5FWslpB3SXC.mat",
+      "size_bytes": 1036,
+      "sha256": "e129a4d391c5b750e389996241d94df1311c588634b91f416f9cddf04316ea6a",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/L52JiHUj5c9TcrDPbC6VwH.mat",
+      "size_bytes": 689,
+      "sha256": "123945ea6e3c90581122dbba319f0bdc642c1b84cb7aa624bd55dcca38427a37",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/LE027J3flfziad1KZP1KnH.mat",
+      "size_bytes": 831,
+      "sha256": "f6cf27ca753c99b5f0e2f5d414c54361344fcb3bc56fa056df1be997a217beb8",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/MMP0BzFTq9IPfgeBFdcaTD.mat",
+      "size_bytes": 1036,
+      "sha256": "1b03f36e11e293f1f79aa94e244a10213642d9810b4bae56a626cebb5031881e",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/NIqAdfrjJP1S4fXlfEqHfG.mat",
+      "size_bytes": 1316,
+      "sha256": "c4bd0d3002bebe7c0130799ae0cf336b6ff5e716ffc605144c0a4837ae0e4917",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/RbEgSQucLYcb0y5LOQl6rD.mat",
+      "size_bytes": 1330,
+      "sha256": "8efb3a5b76fd8f81272be6d1b21b8663dda84851ea49fc57a121cc28d9b66cfe",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/a1cUcUFfw70qJq0fcPSNFG.mat",
+      "size_bytes": 660,
+      "sha256": "19e0965331630e3c719512b7abc21751336e8f410ff40e5285b0daff73db9cfc",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/autoInferAccessInfo.mat",
+      "size_bytes": 3590,
+      "sha256": "0fa5e43a1400c9386880a423c1732d75f20460553e0ddfaffd04ce69fa10906b",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/b4EBa68y4xfxOd74jDODiC.mat",
+      "size_bytes": 1306,
+      "sha256": "308e289ce059b8869a98f54d0a96aad34b249baaad109c0b9b7ced09582b51c4",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/c9t7uC02sUSWLpKxoVwcaB.mat",
+      "size_bytes": 793,
+      "sha256": "14576ebc5231ff392179f9c694b48ac285b20e15f656c489d1a02caa24de2c02",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/eD2h3IQOm4tKyFhPmF1a2D.mat",
+      "size_bytes": 1293,
+      "sha256": "2a7dedcf11a720f78d823152faf31e5abadf7469a033bbb996eb97161efd2354",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/gukgzN7va9xu0zlBjo3W0.mat",
+      "size_bytes": 1291,
+      "sha256": "a0efcb7b70192551ce2dc4393b99261643128b3f0a7670c8002b537e6f8e7a75",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/hthGuvAaD585I4VxDGQ3BE.mat",
+      "size_bytes": 1036,
+      "sha256": "4d724c0279f8cbc2157ee2a6155e1dde3085b6f395bca99e5a61ab2bd46e28e8",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/larvExe5Fm6JjLEjDLcWr.mat",
+      "size_bytes": 660,
+      "sha256": "7dcdc23d6d1234ae5153969c8d64951c62c405d1a593256da77aea65d74b9734",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/pI9JEyFjCVrT33p3LTnmBC.mat",
+      "size_bytes": 997,
+      "sha256": "92177ccea6dfca846ba4f015e5d6f026f63f92fc775027c2a2d209c30edbeccc",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/pXUSwsKnAVu4FQqYjbFxeF.mat",
+      "size_bytes": 1036,
+      "sha256": "46ddf47520de58a600cd2756a34ff6badbf1db98a2c4173a33ed152285be7b18",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/qxMzuW5CUDqfF8c48pBgNG.mat",
+      "size_bytes": 997,
+      "sha256": "26dfe001faf5e46cb9e28de89b99b312d73a1af8191f6686bdbaa5093c4ac61a",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/vDsUhVNT3c9hIrnEDuHzTE.mat",
+      "size_bytes": 1150,
+      "sha256": "e7523b3752f56039c56f7d5d4a1257dee30310ae8c127a368a578e39b177fc33",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/vdERYKEdZepI9TlgnTKIu.mat",
+      "size_bytes": 1073,
+      "sha256": "4209ed26f94b4f4a229541e78a787c82f54992251a9316b92b102cbb5881ff11",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/vteMTTfSQ74baTsXEdlBEF.mat",
+      "size_bytes": 689,
+      "sha256": "d91c191f6396757a38285235075a75db77feff4113afe2f1aa6f151d15bdc2c7",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/w0DJ8podYhZ5fGJw9ouPpD.mat",
+      "size_bytes": 997,
+      "sha256": "40ca0faa44dd649b7dc396fb788f24dab99174fb690b9a7088369d1e0560654c",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/w8Q9dDaP7rncO3wqd4yOcH.mat",
+      "size_bytes": 997,
+      "sha256": "1b5ceebbc5a3836400e9457e40a91dc67a2dce0fdfd9188037a4a33fbc031eed",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/wphppe28h8zwpEDRzIklIH.mat",
+      "size_bytes": 997,
+      "sha256": "a56421e311948e9718f36e36dc166dcb323ecfbbb5cad383494a69b126b06772",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/_sfprj/precompile/zx6i7qzNG1h4UJzb09ntgG.mat",
+      "size_bytes": 1143,
+      "sha256": "bffec5f8f1ac25a8cc5857769d4489cf3120bd04f61943788ac75336a862083d",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/accel/Simulation/Simulation_top_vm.bc",
+      "size_bytes": 8860,
+      "sha256": "ef74128c9a6276d2ecf581f290223c25e9376f6ff84d6768b49577903de9c80f",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/accel/Simulation/amsi_serial.mat",
+      "size_bytes": 231,
+      "sha256": "f3307604ccb044a7a2f2673a301ef9738f9fce72e93fb62c08eac9f1e9c9254b",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/accel/Simulation/tmwinternal/simulink_cache.xml",
+      "size_bytes": 312,
+      "sha256": "e7dd39c2d0334a92c3447125f0ddab33681dd08565b2bcccf78ab3e992a22adc",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/accel/SimulationParamUncertainty/SimulationParamUncertainty_top_vm.bc",
+      "size_bytes": 8080,
+      "sha256": "a5739957b3027473ca031640c9a70143c735d94f38824d3e1738f17460a2b5da",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/accel/SimulationParamUncertainty/amsi_serial.mat",
+      "size_bytes": 247,
+      "sha256": "d58d13bee27d32a10596640ba7d029dbe82f7611db59d471a3510d93ecb76b9f",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/accel/SimulationParamUncertainty/tmwinternal/simulink_cache.xml",
+      "size_bytes": 312,
+      "sha256": "a65dd37de354f5a59bc6684672a49346ab4ed87cdebe50a04273f057dc3be37a",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/sim/varcache/Simulation/checksumOfCache.mat",
+      "size_bytes": 392,
+      "sha256": "f768c6b2611a1380683daf98a3e0f092dbd85d9e76e89926534aa64d395a2a03",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/sim/varcache/Simulation/tmwinternal/simulink_cache.xml",
+      "size_bytes": 312,
+      "sha256": "1f51e44e47d2345fd5a2c4558c411677698ac2f36f1d6b9be80a2632c9f8682f",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/sim/varcache/Simulation/varInfo.mat",
+      "size_bytes": 3432,
+      "sha256": "0350b705daa84c9ff2d7581472c6fd7a45f956670be471b4278437f08dfe9d60",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/sim/varcache/SimulationParamUncertainty/checksumOfCache.mat",
+      "size_bytes": 392,
+      "sha256": "34785ae1d986e4fbd203a9d0ec71a81b10869071d6a451812563e4059a7e6113",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/sim/varcache/SimulationParamUncertainty/tmwinternal/simulink_cache.xml",
+      "size_bytes": 312,
+      "sha256": "3a97fc47a4f8d67c327b104388049b0bb011d6cc99e3876f3c6797627926ac74",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/sim/varcache/SimulationParamUncertainty/varInfo.mat",
+      "size_bytes": 2048,
+      "sha256": "03acc9ec611e3e9972611bf5436e3bc9485014f1802be4e1cc9dc0764c4997c0",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/matlab_PEcondition/slprj/sl_proj.tmw",
+      "size_bytes": 84,
+      "sha256": "3688bbeae4311c377455ba78fdb226e0c88ca788f52403987589acc7409aef85",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/python_LPTN_informed_LSTM/Estimation_results_Federal-Test-Procedure-75_driving_cycle.png",
+      "size_bytes": 688545,
+      "sha256": "bd59483fb2791cd042e2859e20869dc765a289e06a7c2db2ffe9c17b42ade55a",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/python_LPTN_informed_LSTM/Estimation_results_random_op.png",
+      "size_bytes": 617673,
+      "sha256": "a9eb2078f713324682f6a16d8c31d1d5fa71f66e866c1abb13604834d8f82bf7",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/python_LPTN_informed_LSTM/lptn_informed_LSTM.ipynb",
+      "size_bytes": 1655356,
+      "sha256": "580d9f21f7231629d6611e54f2e9377ce129118034e78045138dd79cf0dcfc43",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/python_LPTN_informed_LSTM/lptn_informed_LSTM.png",
+      "size_bytes": 101349,
+      "sha256": "15a94be97d58f583ab3480db01386f59f6dbdd92e3ff064eeac8f28da74ac455",
+      "status": "pass"
+    },
+    {
+      "path": "data/raw/lptn_informed_lstm/python_LPTN_informed_LSTM/report.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "pass"
+    }
+  ],
+  "extra_or_missing_parts": [],
+  "extra_or_missing_files": [],
+  "duplicates": [],
+  "links_or_nonregular_entries": [],
+  "gzip_integrity": "pass",
+  "method": "full sequential stream over every compressed part and every uncompressed regular tar file; no extraction to disk"
+}

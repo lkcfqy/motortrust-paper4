@@ -20,3 +20,6 @@ data/raw/**
 !data/raw/lptn_informed_lstm/
 !data/raw/lptn_informed_lstm/README.md
 !data/raw/lptn_informed_lstm/LICENSE
+
+# Temporary verified raw-data extraction staging.
+.raw-restore-*/

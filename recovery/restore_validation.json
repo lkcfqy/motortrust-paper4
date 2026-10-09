@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "synthetic_tests_passed": 33,
+  "ruff": "pass",
+  "python_3_8_grammar": "pass",
+  "actual_manifests_schema_checked": [
+    {
+      "directory": "paper1",
+      "paper": 1,
+      "files": 155,
+      "parts": 54
+    },
+    {
+      "directory": "paper2",
+      "paper": 2,
+      "files": 8,
+      "parts": 1
+    },
+    {
+      "directory": "paper3",
+      "paper": 3,
+      "files": 57,
+      "parts": 5
+    },
+    {
+      "directory": "paper4",
+      "paper": 4,
+      "files": 110,
+      "parts": 1
+    }
+  ],
+  "restore_script_sha256": "7e89433dd7abc73b91551f448444699c9c9e906f49764620dc8127b41c8825e3",
+  "manifest_maximum_bytes": 16777216,
+  "committed_manifest_pin": "When project/recovery/raw-data-manifest.json exists, SHA-256 of the downloaded manifest bytes must match before parsing JSON or creating staging.",
+  "notes": [
+    "Synthetic archives and destinations were created only in temporary directories.",
+    "No existing research repository or frozen artifact was modified for restore-script testing.",
+    "Actual large data archive payloads were not restored during these tests.",
+    "Raw dataset files and included license files are restored byte-for-byte; existing different files are never overwritten."
+  ]
+}
