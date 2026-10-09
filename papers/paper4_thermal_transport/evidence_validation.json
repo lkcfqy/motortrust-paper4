@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-08-21T11:09:44.762759+00:00",
+  "status": "pass",
+  "frozen_hashes": {
+    "protocol_config": "5e98e959b557b69f2c0d2c0f2b035290751ce135cb3a225f8d6b79a8e5c1bc63",
+    "protocol_document": "ad0834d5e5693e9bc210932a9d41bafead580b7d6ddc40a6f2cde5e4ef336620",
+    "source_csv": "78f3d150f0f2ad9c5dc7ff24dd12c00d386ad530f48c1589ad24fcd88867d3ad",
+    "selection_freeze": "1fa8dc73b38ec597e82862c862062928d33cb0a8272f71788f7df78d854f3bd0",
+    "external_repository_commit": "98e4566b5fb7c70499996fda18dd73179ec16509"
+  },
+  "primary_results": {
+    "source_raw_rmse_c": 1.8672988348161428,
+    "external_raw_rmse_c": 24.492828959871908,
+    "raw_transport_ratio": 13.1167162444481,
+    "source_prior_source_rmse_c": 13.507619404576074,
+    "source_prior_external_rmse_c": 13.61043422354438,
+    "target_only_external_rmse_c": 6.0175187393077625,
+    "external_prior_clips": 999,
+    "gates": {
+      "source_adaptation": {
+        "relative_improvement": -0.5146729627397731,
+        "ci_low_c": -15.641983989497053,
+        "pass": false
+      },
+      "external_adaptation": {
+        "relative_improvement": 0.38088794424632594,
+        "ci_low_c": 0.12959810884904635,
+        "pass": true
+      },
+      "source_uncertainty": {
+        "minimum_nodewise_trajectory_coverage": 0.9285714285714286,
+        "pass": true
+      }
+    }
+  },
+  "support_uncertainty_budget": {
+    "external_supported_profiles": 6,
+    "external_unsupported_profiles": 10,
+    "supported_prior_rmse_c": 3.1933097620965776,
+    "unsupported_prior_rmse_c": 19.860708900413066,
+    "raw_external_joint_coverage": "1/16",
+    "prior_external_joint_coverage": "15/16",
+    "prior_mean_half_width_c": 106.06874172036748,
+    "target_only_15min_external_rmse_c": 2.065306560864155
+  },
+  "manuscript": {
+    "word_count_approximate": 5919,
+    "citation_count": 21,
+    "figure_count": 5,
+    "table_count": 4,
+    "manuscript_sha256": "9f75ee34a38df69f6c1f09311891024d4daaafc46ca2c1306ab4ac82b2dd9e78",
+    "figure_hashes": {
+      "paper4_transport_performance": {
+        "png": "efaae97567c4406b572f34d2a6782bdfe504ca6863860b7eb88be761978e36cb",
+        "pdf": "5b49013737f8fee78b8c2b1603c62b6f3ae7b1fa5c739450552246fb914b606d"
+      },
+      "paper4_support_adaptation": {
+        "png": "4680c6f402aef3a843ffe2805ab4ed62d41315799142fbb18dece1034bb1e7b0",
+        "pdf": "896f86133b7ddeaaeaa6cd61b0283dc739497f5a4b4c5e618188da6755dee10f"
+      },
+      "paper4_budget_sensitivity": {
+        "png": "2329983f4d670d4439806dca64453bb53c6a39aec7917704597df933b548c561",
+        "pdf": "c2cf6321361241f4598777d1b9dc9deecf19d3a5aa102676baac649238ecb7b5"
+      },
+      "paper4_uncertainty_tradeoff": {
+        "png": "2c6593fe7291d74a7a71f2366dddcfea8303b106d9d58d6a06330579573c0518",
+        "pdf": "96bd80f03f16627db751ec17ec24468307c97965127d06ef180923b6f472d798"
+      },
+      "paper4_external_trajectories": {
+        "png": "f3fa3947fb8707a38fc920cfedd779cf68917e92462e03d70fe5e21524e5761a",
+        "pdf": "b786d739249a1405fdf63233c956b9733841b003ae24218f8b1af60f7f671c9d"
+      }
+    }
+  }
+}

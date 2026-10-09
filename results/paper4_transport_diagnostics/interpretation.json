@@ -1,0 +1,43 @@
+{
+  "analysis_status": "post_reveal_diagnostic_without_refitting_or_rethresholding",
+  "direct_raw_source_transport": {
+    "source_mean_rmse_c": 1.8672988348161428,
+    "external_mean_rmse_c": 24.49282895987191,
+    "external_to_source_ratio": 13.116716244448101,
+    "external_joint_band_coverage": 0.0625
+  },
+  "source_prior_adaptation": {
+    "source_gate": {
+      "relative_improvement": -0.5146729627397731,
+      "ci_low_c": -15.641983989497053,
+      "pass": false
+    },
+    "external_gate": {
+      "relative_improvement": 0.38088794424632594,
+      "ci_low_c": 0.12959810884904635,
+      "pass": true
+    },
+    "source_mean_improvement_c": -4.5897739442971766,
+    "external_mean_improvement_c": 8.373363534966007,
+    "external_supported_profiles": 6,
+    "external_unsupported_profiles": 10,
+    "supported_proposed_mean_rmse_c": 3.193309762096577,
+    "unsupported_proposed_mean_rmse_c": 19.86070890041306,
+    "supported_target_only_mean_rmse_c": 4.5654635556047785,
+    "unsupported_clip_count": 999
+  },
+  "uncertainty": {
+    "coverage_gate": {
+      "minimum_nodewise_trajectory_coverage": 0.9285714285714286,
+      "pass": true
+    },
+    "proposed_mean_matched_half_width_c": 106.06874172036748,
+    "interpretation": "coverage passes but the band is operationally very wide"
+  },
+  "claim_boundary": [
+    "No model or threshold changed after reveal.",
+    "Supported-subset results are secondary and retain only 6 of 16 external profiles.",
+    "The external gate alone does not establish numerical reliability.",
+    "Two physical machines cannot support fleet-population inference."
+  ]
+}

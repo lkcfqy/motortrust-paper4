@@ -1,0 +1,16 @@
+{
+  "source_adaptation": {
+    "relative_improvement": -0.5146729627397731,
+    "ci_low_c": -15.641983989497053,
+    "pass": false
+  },
+  "external_adaptation": {
+    "relative_improvement": 0.38088794424632594,
+    "ci_low_c": 0.12959810884904635,
+    "pass": true
+  },
+  "source_uncertainty": {
+    "minimum_nodewise_trajectory_coverage": 0.9285714285714286,
+    "pass": true
+  }
+}

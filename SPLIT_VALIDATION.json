@@ -1,0 +1,66 @@
+{
+  "source_commit": "0cbfc7e5b2868f482902f16d6d0b0c71f9d01f11",
+  "validation_date": "2026-10-09",
+  "python": "/Users/lkc/miniforge3/envs/motortrust/bin/python",
+  "import_isolation": "PYTHONPATH=<this-repository>/src:<this-repository>; PYTHONDONTWRITEBYTECODE=1",
+  "checks": {
+    "ruff_check_no_cache": "pass",
+    "original_file_sha256_equality": {
+      "status": "pass",
+      "copied_files": 91,
+      "mismatches": []
+    },
+    "original_reproducibility_zip": {
+      "status": "pass",
+      "files": 79,
+      "sha256": "f7d59c00303252cb07ef389a2e71c757379cfd976ecb6c9249d8b18cc9e904a0"
+    },
+    "supplementary_material_current": "pass",
+    "submission_structure": {
+      "status": "pass",
+      "inline_drawings": 5,
+      "tables": 4,
+      "paragraphs": 160,
+      "manuscript_pdf_pages": 16
+    },
+    "existing_supplementary_pdf_readable": {
+      "status": "pass",
+      "pages": 7
+    },
+    "selected_existing_pytest_tests": {
+      "status": "pass",
+      "passed": 38,
+      "excluded": 3,
+      "command": "python -m pytest -p no:cacheprovider -q -k \"not frozen_hashes and not full_report_is_json_ready and not supplement_pdf_audit_when_present\""
+    }
+  },
+  "limitations": [
+    "The full frozen-input evidence validator cannot pass without data/raw/electric_motor_temperature/measures_v2.csv (300061411 bytes) and the external upstream repository with its frozen Git commit.",
+    "The original supplementary PDF builder/audit registers five font files at C:/Windows/Fonts; those paths are absent on this macOS validation host.",
+    "Raw-data numerical reruns were not performed in the split directory. Existing frozen results and copied artifacts were checked without altering their bytes."
+  ],
+  "raw_third_party_data_in_git": false,
+  "included_raw_metadata_only": [
+    "data/raw/electric_motor_temperature/provenance.json",
+    "data/raw/lptn_informed_lstm/README.md",
+    "data/raw/lptn_informed_lstm/LICENSE"
+  ],
+  "shared_dependencies": [
+    "src/pmsm_sci/__init__.py",
+    "scripts/audit_reference_metadata.py",
+    "scripts/build_paper2_submission.py",
+    "scripts/build_jeet_submission.py",
+    "scripts/build_jeet_pdfs.py",
+    "references/key_papers.bib"
+  ],
+  "new_files": [
+    "README.md",
+    ".gitignore",
+    "data/raw/README.md",
+    "recovery/licenses/PAPER4_DATA_SOURCES_AND_LICENSES.md",
+    "SPLIT_MANIFEST.json",
+    "SPLIT_VALIDATION.json"
+  ],
+  "repository_initialized": false,
+  "original_repository_modified": false
+}

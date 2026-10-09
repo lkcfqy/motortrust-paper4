@@ -1,0 +1,14 @@
+{
+  "dataset_handle": "wkirgsn/electric-motor-temperature",
+  "source_url": "https://www.kaggle.com/datasets/wkirgsn/electric-motor-temperature",
+  "license": "CC BY-SA 4.0",
+  "downloaded_utc": "2026-08-21T09:47:52.330831+00:00",
+  "kaggle_cache": "C:\\Users\\lkcfq\\.cache\\kagglehub\\datasets\\wkirgsn\\electric-motor-temperature\\versions\\3",
+  "files": [
+    {
+      "file": "measures_v2.csv",
+      "bytes": 300061411,
+      "sha256": "78f3d150f0f2ad9c5dc7ff24dd12c00d386ad530f48c1589ad24fcd88867d3ad"
+    }
+  ]
+}

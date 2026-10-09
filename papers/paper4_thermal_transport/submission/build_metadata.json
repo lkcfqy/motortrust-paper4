@@ -1,0 +1,35 @@
+{
+  "bibliography_sha256": "da557521f191a435c12992b1a6c7d06784dd7df5accf87f89fc9df173f9852d3",
+  "design": {
+    "base_preset": "narrative_proposal",
+    "body": "Times New Roman 10.5 pt, justified, 1.2 spacing",
+    "images": "inline, maximum 6.35 inches",
+    "named_override": "journal-neutral scientific manuscript",
+    "page": "US Letter portrait, 1 inch margins",
+    "tables": "9360 DXA fixed geometry, 120 DXA indent"
+  },
+  "docx": {
+    "citations": 21,
+    "figures": 5,
+    "paragraphs": 160,
+    "path": "papers\\paper4_thermal_transport\\submission\\Paper4_Manuscript_Anonymous.docx",
+    "sha256": "959ecf70a0686e5aac496e67898ccdb8e60759027b556ac20f1368cebfda84a6",
+    "tables": 4
+  },
+  "docx_structural_audit": {
+    "inline_drawings": 5,
+    "paragraphs": 160,
+    "tables": 4
+  },
+  "pdf": {
+    "citations": 21,
+    "figures": 5,
+    "pages": 16,
+    "path": "papers\\paper4_thermal_transport\\submission\\Paper4_Manuscript_Anonymous.pdf",
+    "sha256": "d32711178a0bf8c9e611ddd499cebfc5f6ae4e55eabca87c736898c1f79641cd",
+    "tables": 4
+  },
+  "source": "papers\\paper4_thermal_transport\\manuscript.md",
+  "source_sha256": "9f75ee34a38df69f6c1f09311891024d4daaafc46ca2c1306ab4ac82b2dd9e78",
+  "status": "pass"
+}

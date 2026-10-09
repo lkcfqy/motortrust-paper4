@@ -1,0 +1,220 @@
+paper:
+  identifier: paper4_thermal_transport
+  working_title: >-
+    Do Electrothermal Models Transport Across PMSMs? A Protocol-Frozen
+    Benchmark of Source Priors, Five-Minute Calibration, and Support-Aware
+    Uncertainty
+  protocol_version: 1.0
+  frozen_date: 2026-08-21
+  status_at_freeze: >-
+    Raw schemas, published code, row counts, value ranges, and node semantics
+    were inspected. No candidate model error, ranking, interval coverage, or
+    external outcome had been computed.
+
+datasets:
+  source:
+    name: Electric Motor Temperature / 52 kW PMSM
+    doi: 10.34740/KAGGLE/DSV/2161054
+    license: CC-BY-SA-4.0
+    sha256: 78f3d150f0f2ad9c5dc7ff24dd12c00d386ad530f48c1589ad24fcd88867d3ad
+    native_sample_rate_hz: 2
+    rows: 1330816
+    profiles: 69
+    physical_machines: 1
+  external:
+    name: LPTN-informed LSTM IPMSM dataset
+    article_doi: 10.1109/TPEL.2024.3409388
+    repository: https://github.com/Zirui24/lptn_informed_LSTM
+    commit: 98e4566b5fb7c70499996fda18dd73179ec16509
+    license: MIT
+    native_sample_rate_hz: 1
+    rows: 97725
+    profiles: 16
+    physical_machines: 1
+
+harmonization:
+  analysis_rate_hz: 1
+  source_resampling:
+    exogenous_and_boundaries: mean_of_each_nonoverlapping_two_row_bin
+    thermal_states: last_observation_in_each_bin
+    odd_terminal_bin: retain
+  target_nodes:
+    winding:
+      source: stator_winding
+      external: mean(activewind_1, activewind_2)
+    stator_core:
+      source: mean(stator_tooth, stator_yoke)
+      external: mean(slotbottom, outer_yoke)
+    rotor:
+      source: pm
+      external: rotor
+      semantic_limit: rotor measurement is a proxy for source PM temperature
+  exogenous_mapping:
+    ambient: [ambient, ambient]
+    coolant: [coolant, water_outlet]
+    u_d: [u_d, Ud]
+    u_q: [u_q, Uq]
+    i_d: [i_d, IdFbk]
+    i_q: [i_q, IqFbk]
+    speed_rpm: [motor_speed, speed]
+    torque_nm: [torque, Torque]
+  forbidden_external_columns:
+    - active_wind_est
+    - stator_est
+    - rotor_est
+
+source_roles:
+  split_seed: 42
+  train_profiles: [3, 4, 5, 8, 9, 15, 16, 17, 18, 19, 21, 24, 27, 29, 30, 36, 41, 44, 46, 47, 48, 49, 50, 51, 52, 57, 58, 60, 61, 62, 64, 66, 67, 68, 70, 72, 73, 74, 75, 76, 78, 79, 80, 81]
+  validation_profiles: [10, 13, 23, 31, 32, 42, 53, 54, 55, 63, 69]
+  locked_test_profiles: [2, 6, 7, 11, 12, 14, 20, 26, 43, 45, 56, 59, 65, 71]
+  forbidden_for_selection: [source_locked_test, all_external_profiles]
+
+timeline:
+  initial_state: thermal state vector observed at t=0
+  rollout_anchor: >-
+    For a nonzero commissioning budget, every method starts its hidden-label
+    rollout from the final observed state at prefix_second_minus_one. Frozen
+    methods may use that state but may not update parameters from prefix labels.
+  commissioning_prefix_seconds: 300
+  matched_evaluation_seconds: 1200
+  source_long_evaluation_seconds: 3300
+  source_training_cap_seconds_per_profile: 3600
+  sensitivity_prefix_seconds: [60, 300, 900]
+  sensitivity_evaluation_seconds: 600
+  sensitivity_rule: >-
+    Each budget is followed by exactly 600 hidden-label rollout seconds. The
+    primary 300-second matched endpoint remains the separate 1200-second test.
+  numerical_temperature_guard_c: [-50.0, 250.0]
+  guard_reporting: >-
+    All methods use the same guard. Every clipped state and every non-finite
+    rollout is counted; a method with any such event cannot be described as
+    numerically reliable even if its clipped error is finite.
+  rule: >-
+    Only prefix temperature labels may update a target-specific model. All
+    temperatures after the prefix are hidden until the complete closed-loop
+    trajectory has been generated.
+
+features:
+  boundary_terms: [coolant_minus_node, ambient_minus_node]
+  coupling_terms: [other_node_minus_node]
+  dimensionless_loss_proxies:
+    - current_magnitude_squared
+    - current_magnitude_squared_times_speed
+    - voltage_times_current_magnitude
+    - absolute_mechanical_power_proxy
+    - speed_squared
+  prefix_scaling: >-
+    Each profile's loss-proxy denominators use only its first 300 seconds of
+    exogenous measurements, with deterministic positive floors learned from
+    source training prefixes. No temperature labels define feature scales.
+
+methods:
+  locked:
+    - initial_state_persistence
+    - boundary_shift_persistence
+    - source_ridge_arx
+    - source_positive_thermal_network_raw
+    - source_positive_thermal_network_normalized
+    - target_only_prefix_positive_thermal_network
+    - source_prior_prefix_calibrated_thermal_network
+    - source_thermal_network_plus_hist_gradient_residual
+  external_context_only:
+    - published_target_specific_lptn_estimates
+  tuning:
+    data: source_validation_profiles_only
+    ridge_alpha_grid: [0.01, 0.1, 1.0, 10.0, 100.0]
+    source_prior_penalty_grid: [0.1, 1.0, 10.0, 100.0, 1000.0]
+    selection_metric: profile_macro_matched_horizon_rmse_c
+  fit_weighting: equal_total_weight_per_physical_profile
+  positive_thermal_network:
+    transition: next_state_minus_previous_state
+    exogenous_alignment: current_second_inputs_predict_current_second_state_from_previous_state
+    constraints: all_effective_coupling_and_loss_coefficients_nonnegative
+    solver: scipy_optimize_lsq_linear
+    solver_tolerance: 1.0e-10
+    maximum_iterations: 2000
+    intercept: false
+  prefix_calibration:
+    objective: mean_prefix_squared_transition_error_plus_lambda_squared_distance_to_source_parameters
+    constraints: nonnegative
+    target_only_source_penalty: 0
+  ridge_arx:
+    response: next_state_minus_previous_state
+    intercept: true
+  residual_booster:
+    estimator: HistGradientBoostingRegressor
+    learning_rate: 0.05
+    max_iter: 200
+    max_leaf_nodes: 15
+    min_samples_leaf: 50
+    l2_regularization: 1.0
+    random_state: 20260821
+  post_reveal_method_addition: forbidden
+
+uncertainty:
+  nominal_trajectory_coverage: 0.90
+  calibration_unit: complete_source_validation_profile
+  score: maximum_absolute_error_over_the_closed_loop_evaluation_trajectory
+  calibration_profiles: 11
+  quantile_rank: 11
+  external_interpretation: >-
+    Source-calibrated bands are a transport stress test only; no exchangeability
+    or finite-sample coverage guarantee is claimed across physical machines.
+
+support:
+  summary_window_seconds: 300
+  inputs: >-
+    Median and 95th percentile of current magnitude, voltage magnitude,
+    absolute speed, absolute torque, electrical-power proxy, mechanical-power
+    proxy, coolant, and ambient.
+  scaling: source_train_profile_median_and_mad
+  distance: nearest_source_train_profile_euclidean_distance
+  threshold: >-
+    95th percentile of leave-one-profile-out nearest-neighbour distances among
+    source training profiles.
+  policy: >-
+    Unsupported profiles are flagged but retained in all primary error and
+    coverage summaries. Rejection may not hide a failed external transfer.
+
+primary_endpoints:
+  - profile_macro_rmse_c_by_node_and_across_nodes
+  - profile_macro_mae_c
+  - worst_profile_rmse_c
+  - paired_profile_bootstrap_difference_in_rmse
+  - simultaneous_trajectory_band_coverage_and_width
+  - support_distance_and_unsupported_rate
+  - numerical_rollout_failure_and_temperature_clip_counts
+
+predeclared_gates:
+  source_adaptation:
+    requirement: >-
+      At least 10 percent relative reduction in matched-horizon profile-macro
+      RMSE versus the frozen normalized source thermal network, with a positive
+      lower bound for the paired profile-bootstrap improvement.
+  external_adaptation:
+    requirement: >-
+      At least 10 percent relative reduction in external matched-horizon
+      profile-macro RMSE versus the frozen normalized source thermal network,
+      with a positive lower bound for the paired profile-bootstrap improvement.
+  source_uncertainty:
+    requirement: >-
+      The minimum of the three node-wise simultaneous-in-time trajectory
+      coverages on source test profiles is at least 0.80.
+
+statistics:
+  independent_unit: complete_operating_profile
+  paired_bootstrap_replicates: 10000
+  bootstrap_seed: 20260821
+  multiplicity: Holm correction within each declared comparison family
+  reporting: raw counts, per-profile values, point differences, and 95 percent intervals
+
+claim_limits:
+  - only two physical machines are represented, one per public dataset
+  - profiles are repeated conditions and are not machine-population replicates
+  - rotor and permanent-magnet temperatures are related but not identical sensor locations
+  - commissioning calibration assumes temporary access to all three target temperatures
+  - no formal conformal guarantee is claimed across machines or within dependent time points
+  - published external model estimates are contextual oracle outputs, never target-blind baselines
+  - no first-ever adaptive-digital-twin or state-of-the-art claim
+  - failed gates remain failures and may not be replaced after reveal

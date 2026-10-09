@@ -1,0 +1,34 @@
+{
+  "frozen_date": "2026-08-21",
+  "status": "frozen_before_first_candidate_model_fit",
+  "config": "C:\\lkc\\phd sci\\configs\\paper4_thermal_transport.yaml",
+  "config_sha256": "5e98e959b557b69f2c0d2c0f2b035290751ce135cb3a225f8d6b79a8e5c1bc63",
+  "protocol": "C:\\lkc\\phd sci\\docs\\paper4_protocol.md",
+  "protocol_sha256": "ad0834d5e5693e9bc210932a9d41bafead580b7d6ddc40a6f2cde5e4ef336620",
+  "primary_data_sha256": "78f3d150f0f2ad9c5dc7ff24dd12c00d386ad530f48c1589ad24fcd88867d3ad",
+  "external_repository_commit": "98e4566b5fb7c70499996fda18dd73179ec16509",
+  "external_id_file_sha256": {
+    "id_0.csv": "50d2cb9fc0342aa009c5f9fa101c0c109305ead7684882349cec5cdceccb49dc",
+    "id_1.csv": "c978ee2a613b9713e8d506f5bda037e42fc96d3f0f2e008e826a10baffe9d519",
+    "id_2.csv": "5a76aa86633b0ab2adf06f86de31465284296dcdbab1e6cff922e9fece46277e",
+    "id_3.csv": "581e38129d6f3bf3b11f211c6db37b4ec760e639898c50d3c131a2d657db02f3",
+    "id_4.csv": "931c335f1ab0c2a5a37ac88bdb52d6feef03dedf0424ff237c13f83272586c82",
+    "id_5.csv": "3de71b5bff182390f561c113361a4401bb289a8d58a2fcab2744707bd3c02d0f",
+    "id_6.csv": "7133af6926addcaa0b82a29940e8676d5d7ad73c1902d563b753594af1acf9e4",
+    "id_7.csv": "222185a6ede770c077c1308eba3853c5a42adea8af64014b41070a840ad679d3",
+    "id_8.csv": "86d8fbf2b1325d6a6aed77e84ee908feafd1600c9f6a545223dc4377b8fb8c09",
+    "id_9.csv": "4c72e7ec539a37920dd7df26b5cae9033f95ed7035b307b369ce2d6913fca970",
+    "id_10.csv": "4cae686c7591566160e356d4a48ad119cf95e7f31d40cd1203cd60b1d71b7e8f",
+    "id_11.csv": "de437110cc6f61ac2911783daf7e3ac49696aec5d3c4155c8921d9b11e7e27c4",
+    "id_12.csv": "b43d4b92c1251f9bea1b193aa1135191815ecba27bb29082ad3fabd5cac3222f",
+    "id_13.csv": "4887c776bd5349f9070a4e8d22118c34c570a1c54ff1728690eab9ec8ec10e7f",
+    "id_14.csv": "87cb50ef36e99ee9c290382cdc8d98d7839f8eb440c0990dbbecea2b13fe79e3",
+    "id_15.csv": "ead580d7533dd2260f9cbd2479c4e3964045edb87b41729f88556e8068c991ce"
+  },
+  "forbidden_at_freeze": [
+    "candidate model errors",
+    "candidate model ranking",
+    "trajectory interval coverage",
+    "external transport outcomes"
+  ]
+}

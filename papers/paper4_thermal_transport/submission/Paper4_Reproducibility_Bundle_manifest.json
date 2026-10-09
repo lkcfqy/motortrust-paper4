@@ -1,0 +1,22 @@
+{
+  "bytes": 29376589,
+  "categories": {
+    "bibliography": 1,
+    "configuration": 1,
+    "documentation": 5,
+    "environment": 1,
+    "figure": 10,
+    "module": 3,
+    "paper": 6,
+    "result": 28,
+    "script": 9,
+    "submission": 4,
+    "test": 11
+  },
+  "path": "papers/paper4_thermal_transport/submission/Paper4_Reproducibility_Bundle.zip",
+  "raw_third_party_data_included": false,
+  "sha256": "f7d59c00303252cb07ef389a2e71c757379cfd976ecb6c9249d8b18cc9e904a0",
+  "source_file_count": 79,
+  "source_manifest_sha256": "adf64f021ca9d26bb6c3bb510a54291e88e3515eb9b2a820cb1d89aee668d6d5",
+  "status": "built"
+}

@@ -1,0 +1,11 @@
+family,candidate,validation_profile_macro_rmse_c,clip_count,nonfinite_count,selected
+ridge_alpha,0.01,14.086709582433462,0,0,False
+ridge_alpha,0.1,14.132430977831028,0,0,False
+ridge_alpha,1.0,14.238224921811433,0,0,False
+ridge_alpha,10.0,13.826116150482402,0,0,False
+ridge_alpha,100.0,10.543439014197435,0,0,True
+source_prior_penalty,0.1,13.427393761938514,0,0,True
+source_prior_penalty,1.0,25.157741530903987,48,0,False
+source_prior_penalty,10.0,18.48469844797435,111,0,False
+source_prior_penalty,100.0,15.621024860370733,0,0,False
+source_prior_penalty,1000.0,14.439387055314858,0,0,False

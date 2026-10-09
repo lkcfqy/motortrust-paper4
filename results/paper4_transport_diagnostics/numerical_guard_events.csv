@@ -1,0 +1,6 @@
+dataset,role,profile_id,method,horizon,node,rmse_c,mae_c,max_abs_c,clip_count,nonfinite_count,n_seconds
+primary_52kw,source_test,45,source_prior_prefix_calibrated_thermal_network,matched_20min,macro,48.07115063228508,42.220190258773606,92.8194019069013,45,0,1200
+external_ipmsm,external_test,14,source_ridge_arx,matched_20min,macro,86.48692074442134,70.6041983413527,146.26836866860668,306,0,1200
+external_ipmsm,external_test,14,source_positive_thermal_network_normalized,matched_20min,macro,122.96214277418412,109.99019591130347,167.73134647326,683,0,1200
+external_ipmsm,external_test,14,source_prior_prefix_calibrated_thermal_network,matched_20min,macro,151.01846514711215,131.42874062252105,214.10054602401192,999,0,1200
+external_ipmsm,external_test,14,source_thermal_network_plus_hist_gradient_residual,matched_20min,macro,120.9501364147576,108.86205571257574,163.1227451750426,684,0,1200

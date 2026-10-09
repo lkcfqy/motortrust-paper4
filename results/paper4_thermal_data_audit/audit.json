@@ -1,0 +1,259 @@
+{
+  "created_utc": "2026-08-21T10:11:03.220413+00:00",
+  "primary": {
+    "path": "C:\\lkc\\phd sci\\data\\raw\\electric_motor_temperature\\measures_v2.csv",
+    "sha256": "78f3d150f0f2ad9c5dc7ff24dd12c00d386ad530f48c1589ad24fcd88867d3ad",
+    "raw_rows": 1330816,
+    "harmonized_1hz_rows": 665422,
+    "profiles": 69,
+    "exact_duplicate_rows": 0,
+    "null_cells": 0,
+    "duration_hours_native_rate": 184.83555555555554,
+    "ranges": {
+      "ambient": {
+        "min": 9.358880478818811,
+        "p01": 19.850616455078125,
+        "median": 24.797106797202545,
+        "p99": 28.57238009108274,
+        "max": 30.70237159729004,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "coolant": {
+        "min": 11.310230144011602,
+        "p01": 18.03355153083801,
+        "median": 26.90068231419388,
+        "p99": 91.09200365196513,
+        "max": 99.39707718923555,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "u_d": {
+        "min": -131.4345474243164,
+        "p01": -130.68593719482422,
+        "median": -7.4486146112488765,
+        "p99": 124.08857523897757,
+        "max": 131.45773315429688,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "u_q": {
+        "min": -25.226922035217285,
+        "p01": -2.2024703348500956,
+        "median": 48.9399528503418,
+        "p99": 131.79734802246094,
+        "max": 133.0286542014752,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "i_d": {
+        "min": -277.88417053222656,
+        "p01": -222.60500457763672,
+        "median": -51.152452162137436,
+        "p99": -1.9990364092588422,
+        "max": 0.0448195934295654,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "i_q": {
+        "min": -293.1882247010549,
+        "p01": -216.16861940065945,
+        "median": 15.773998975753784,
+        "p99": 253.59883720397949,
+        "max": 301.7074737548828,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "speed_rpm": {
+        "min": -262.40089797735806,
+        "p01": -0.003294672915010623,
+        "median": 1999.9773559570312,
+        "p99": 5999.934326171875,
+        "max": 6000.000732421875,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "torque_nm": {
+        "min": -246.18612474808185,
+        "p01": -178.35291067794648,
+        "median": 10.86048698425293,
+        "p99": 215.39043463774297,
+        "max": 261.00225830078125,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "temp_winding": {
+        "min": 18.58688735961914,
+        "p01": 19.539694423675538,
+        "median": 65.11231491530913,
+        "p99": 124.41010378227905,
+        "max": 141.31109619140625,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "temp_stator_core": {
+        "min": 18.18561553955078,
+        "p01": 18.83216891288757,
+        "median": 50.902098824522525,
+        "p99": 99.86118318099128,
+        "max": 106.23835986936399,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "temp_rotor": {
+        "min": 20.88642883300781,
+        "p01": 23.598103332519532,
+        "median": 60.26877638863325,
+        "p99": 97.19131637573244,
+        "max": 113.58968353271484,
+        "null": 0,
+        "nonfinite": 0
+      }
+    }
+  },
+  "external": {
+    "root": "C:\\lkc\\phd sci\\data\\raw\\lptn_informed_lstm",
+    "repository_commit": "98e4566b5fb7c70499996fda18dd73179ec16509",
+    "raw_rows": 97725,
+    "harmonized_1hz_rows": 97725,
+    "profiles": 16,
+    "exact_duplicate_rows": 0,
+    "null_cells": 0,
+    "duration_hours_from_tsim_1": 27.145833333333332,
+    "readme_claimed_hours": 23.8,
+    "aggregate_sha256": "9ee0f4c2bd17614b801199514b527c7167e4b51bbdf44315b0385c5336a3abb6",
+    "id_file_sha256": {
+      "id_0.csv": "50d2cb9fc0342aa009c5f9fa101c0c109305ead7684882349cec5cdceccb49dc",
+      "id_1.csv": "c978ee2a613b9713e8d506f5bda037e42fc96d3f0f2e008e826a10baffe9d519",
+      "id_2.csv": "5a76aa86633b0ab2adf06f86de31465284296dcdbab1e6cff922e9fece46277e",
+      "id_3.csv": "581e38129d6f3bf3b11f211c6db37b4ec760e639898c50d3c131a2d657db02f3",
+      "id_4.csv": "931c335f1ab0c2a5a37ac88bdb52d6feef03dedf0424ff237c13f83272586c82",
+      "id_5.csv": "3de71b5bff182390f561c113361a4401bb289a8d58a2fcab2744707bd3c02d0f",
+      "id_6.csv": "7133af6926addcaa0b82a29940e8676d5d7ad73c1902d563b753594af1acf9e4",
+      "id_7.csv": "222185a6ede770c077c1308eba3853c5a42adea8af64014b41070a840ad679d3",
+      "id_8.csv": "86d8fbf2b1325d6a6aed77e84ee908feafd1600c9f6a545223dc4377b8fb8c09",
+      "id_9.csv": "4c72e7ec539a37920dd7df26b5cae9033f95ed7035b307b369ce2d6913fca970",
+      "id_10.csv": "4cae686c7591566160e356d4a48ad119cf95e7f31d40cd1203cd60b1d71b7e8f",
+      "id_11.csv": "de437110cc6f61ac2911783daf7e3ac49696aec5d3c4155c8921d9b11e7e27c4",
+      "id_12.csv": "b43d4b92c1251f9bea1b193aa1135191815ecba27bb29082ad3fabd5cac3222f",
+      "id_13.csv": "4887c776bd5349f9070a4e8d22118c34c570a1c54ff1728690eab9ec8ec10e7f",
+      "id_14.csv": "87cb50ef36e99ee9c290382cdc8d98d7839f8eb440c0990dbbecea2b13fe79e3",
+      "id_15.csv": "ead580d7533dd2260f9cbd2479c4e3964045edb87b41729f88556e8068c991ce"
+    },
+    "aggregate_matches_raw_exactly": true,
+    "forbidden_model_output_columns": [
+      "active_wind_est",
+      "stator_est",
+      "rotor_est"
+    ],
+    "ranges": {
+      "ambient": {
+        "min": 17.9,
+        "p01": 19.3,
+        "median": 23.8,
+        "p99": 26.3,
+        "max": 27.9,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "coolant": {
+        "min": 19.22307477,
+        "p01": 19.5081205608,
+        "median": 24.75022564,
+        "p99": 26.398906281200002,
+        "max": 26.7,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "u_d": {
+        "min": -508.4428,
+        "p01": -129.90618800000001,
+        "median": -2.787891,
+        "p99": 0.9234215599999912,
+        "max": 26.41173,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "u_q": {
+        "min": -5.153368,
+        "p01": -0.57839,
+        "median": 17.74646,
+        "p99": 90.30672119999998,
+        "max": 96.57825,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "i_d": {
+        "min": -210.9041,
+        "p01": -186.83169999999998,
+        "median": -41.46933,
+        "p99": 0.2895512399999869,
+        "max": 8.192116,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "i_q": {
+        "min": -152.1845,
+        "p01": -2.86933732,
+        "median": 71.85593,
+        "p99": 323.32439999999997,
+        "max": 342.9677,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "speed_rpm": {
+        "min": 0.0,
+        "p01": 0.0,
+        "median": 751.5106,
+        "p99": 4003.256,
+        "max": 4036.689,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "torque_nm": {
+        "min": -61.38,
+        "p01": 0.4256988,
+        "median": 27.103,
+        "p99": 144.09759999999994,
+        "max": 158.28,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "temp_winding": {
+        "min": 18.772834255,
+        "p01": 20.5413362186,
+        "median": 33.349999999999994,
+        "p99": 61.0,
+        "max": 65.4,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "temp_stator_core": {
+        "min": 19.81915403,
+        "p01": 20.9271167842,
+        "median": 30.1,
+        "p99": 48.55,
+        "max": 50.75,
+        "null": 0,
+        "nonfinite": 0
+      },
+      "temp_rotor": {
+        "min": 18.81756247,
+        "p01": 20.126535,
+        "median": 39.65,
+        "p99": 75.025,
+        "max": 77.9,
+        "null": 0,
+        "nonfinite": 0
+      }
+    }
+  },
+  "checks": {
+    "required_schema": "pass",
+    "finite_required_values": "pass",
+    "exact_row_uniqueness": "pass",
+    "profile_contiguity": "pass",
+    "external_raw_aggregate_equality": "pass",
+    "estimate_columns_excluded": "pass"
+  }
+}

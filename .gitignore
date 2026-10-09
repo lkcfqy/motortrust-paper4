@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+tmp/
+
+# Raw measurements are restored locally or downloaded separately.
+# Keep only acquisition instructions and original attribution metadata.
+data/raw/**
+!data/raw/README.md
+!data/raw/electric_motor_temperature/
+!data/raw/electric_motor_temperature/provenance.json
+!data/raw/lptn_informed_lstm/
+!data/raw/lptn_informed_lstm/README.md
+!data/raw/lptn_informed_lstm/LICENSE

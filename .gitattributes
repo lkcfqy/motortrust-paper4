@@ -1,0 +1,17 @@
+*.docx binary
+*.gz binary
+*.pdf binary
+*.png binary
+*.zip binary
+
+# Frozen research artifacts must retain their original bytes across platforms.
+results/** -text
+data/processed/** -text
+recovery/licenses/** -text
+
+# Preserve downloaded publication evidence and its recorded source checksums.
+submission/jom/official_forms/** -text
+submission/jom/reference_evidence/** -text
+
+# Preserve every copied original byte in the independent snapshot.
+* -text

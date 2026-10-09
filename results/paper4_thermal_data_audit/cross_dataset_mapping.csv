@@ -1,0 +1,12 @@
+family,source_52kw,external_ipmsm,interpretation
+boundary,ambient,ambient,direct
+boundary,coolant,water_outlet,direct fluid-temperature proxy
+electrical,u_d,Ud,direct dq voltage
+electrical,u_q,Uq,direct dq voltage
+electrical,i_d,IdFbk,feedback dq current
+electrical,i_q,IqFbk,feedback dq current
+mechanical,motor_speed,speed,rpm
+mechanical,torque,Torque,N m
+thermal,stator_winding,"mean(activewind_1,activewind_2)",constructed
+thermal,"mean(stator_tooth,stator_yoke)","mean(slotbottom,outer_yoke)",constructed core mean
+thermal,pm,rotor,semantic proxy; sensor locations differ
